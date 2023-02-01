@@ -42,9 +42,11 @@ a {
     color: #ffffff;
 }
 
-.wrapper, .headshot, .about-me, .work, .contact-me {
+.wrapper, .headshot, .about-me, .work, .contact-me, .wrapper2 {
     background-color:#778899;
     display:block;
+    color: black;
+    font-size: 18px;
 }
 
 .about-me h2, .work h2, .contact-me h2 {
@@ -54,36 +56,45 @@ a {
 .wrapper {
     margin: 0;
     width:100%;
+    height:100%;
+    padding: 15px;
 }
 
 .headshot {
     width: 600px;
     height:300px;
+    border-radius: 5px;
 }
 
-
-.aboutme {
-    display:block;
-    color: black;
-    font-size: 16px;
+.wrapper2 {
+    margin:0;
+    width:100%;
+    height:100%;
+    background-color: #778899;
 }
 
-.work {
-
+.img {
+    display:inline-block;
+    border-radius: 10px;
 }
 
-.big-img {
+.big {
     width: 400px;
-    height: 400px;
-    float: right;
-}
-.small-img {
-    width:200px;
-    height:200px;
-    float:right;
+    height:400px;
 }
 
+.small {
+    width:300px;
+    height:300px;
+
+}
+.contact-me ul {
+    display:flex;
+    list-style:none;
+    padding: 0px;
+    justify-content: space-between;
+}
 .contact-me ul li {
-    display:inline
-
+    border: 4px solid black;
+    padding: 5px;
 }
