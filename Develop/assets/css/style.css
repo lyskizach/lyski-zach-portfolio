@@ -1,3 +1,7 @@
+:root {
+    --glow: #ffff66;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,11 +25,11 @@
 }
 
 .header div {
-    padding-top: 15px;
-    margin-right: 20px;
+    padding-top: 0px;
+    margin-right: 0px;
     float: right;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 42px;
+    font-size: 28px;
 
 }
 
@@ -42,20 +46,24 @@ a {
     color: #ffffff;
 }
 
-.wrapper, .headshot, .about-me, .work, .contact-me, .wrapper2 {
-    background-color:#778899;
+.wrapper, .headshot, .aboutme, .work, .contactme, .wrapper2 {
+    background-color: #2a607c ;
     display:block;
     color: black;
     font-size: 18px;
 }
 
-.about-me h2, .work h2, .contact-me h2 {
-    font-size: 36px;
+.aboutme h2, .work h2, .contact-me h2 {
+    font-size: 48px;
 }
 
 .wrapper {
-    margin: 0;
-    width:100%;
+    background-color:#778899;
+    display:flex;
+    justify-content:center;
+    border: 5px solid black;
+    margin: 15px;
+    width:98%;
     height:100%;
     padding: 15px;
 }
@@ -64,18 +72,37 @@ a {
     width: 600px;
     height:300px;
     border-radius: 5px;
+    border: 5px solid black;
+}
+
+.aboutme {
+    border: 5px solid black;
+    background-color: #2a607c;
+    margin: 15px;
+}
+
+.work {
+    border: 5px solid black;
+    background-color: #778899;
+    margin: 15px;
 }
 
 .wrapper2 {
-    margin:0;
-    width:100%;
+    border: 5px solid black;
+    margin: 15px;
+    margin-left:400px;
+    margin-right:0px;
+    width:50%;
     height:100%;
     background-color: #778899;
+    display:flex;
+    flex-flow: row wrap;
+    transition: all 0.5s ease-in-out;
 }
 
 .img {
-    display:inline-block;
     border-radius: 10px;
+    
 }
 
 .big {
@@ -84,17 +111,27 @@ a {
 }
 
 .small {
-    width:300px;
-    height:300px;
-
+    width:200px;
+    height:200px;
 }
-.contact-me ul {
+
+.contactme {
+    border: 5px solid black;
+    background-color: #2a607c;
+    margin: 15px;
+}
+
+.contactme ul {
     display:flex;
     list-style:none;
     padding: 0px;
     justify-content: space-between;
 }
-.contact-me ul li {
+.contactme ul li {
     border: 4px solid black;
     padding: 5px;
+}
+
+.img:hover {
+  box-shadow: inset 5px 5px 25px var(--glow), 0 0 25px var(--glow);
 }
