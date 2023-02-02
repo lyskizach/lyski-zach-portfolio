@@ -50,58 +50,63 @@ a {
 .container {
     display:flex;
     margin-left: 200px;
+    margin-bottom:50px;
+    margin-top: 50px;
     width:100%;
     height:100%;
     padding-top:15px;
     padding-bottom: 50px;
 }
 
-.aboutme h2, .mywork h2, .contactme h2 {
+.headshot {
+    width: 650px;
+    height:350px;
+    border-radius: 5px;
+    padding-left:25px;
+    object-fit:contain;
+    width:75%;
+}
+
+.aboutme {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.aboutme h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+.aboutme div {
+    flex: 0 0 77%;
+}
+
+.aboutme p {
+    margin-bottom: 20px;
+}
+
+.mywork h2, .contactme h2 {
     font-size: 36px;
     float:left;
     text-decoration: underline;
     color: #2a607c;
 }
 
-.aboutme h2 {
-    padding-top:75px;
-    padding-left: 25px;
-}
 
 .mywork h2 {
     padding-top: 150px;
     padding-left: 25px;
 }
 
-.aboutme p {
-    display:flex;
-    justify-content:center;
-    margin-left:200px;
-    padding-top: 25px;
-    border-left: 5px solid #000000;
-    padding-left: 25px;
-    padding-bottom:25px;
-    font-size:24px;
-}
-
-.headshot {
-    width: 650px;
-    height:350px;
-    border-radius: 5px;
-    border-left: 5px solid #000000;
-    padding-left:25px;
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        margin-left:0px;
-    }
-    .headhsot {
-        padding-left: none;
-        border-left: none;
-        border-radius: none;
-    }
-}
 
 .container2 {
     display:flex;
@@ -172,4 +177,22 @@ a {
 
 .img:hover {
   box-shadow: inset 25px 25px 25px var(--glow), 0 0 25px var(--glow);
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        display:flex;
+        justify-content:center;
+        margin-left: 0px;
+        padding-top:0px;
+        padding-bottom: 0px;
+        border:none;
+    }
+    .headhsot {
+        padding-left: 0;
+        border:none;
+        width:100%;
+
+    }
 }
