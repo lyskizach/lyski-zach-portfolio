@@ -1,5 +1,5 @@
 :root {
-    --glow: #ffff66;
+    --glow: #003366;
 }
 
 * {
@@ -25,7 +25,7 @@
 }
 
 .header div {
-    padding-top: 0px;
+    padding-top: 45px;
     margin-right: 0px;
     float: right;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -39,66 +39,121 @@
 
 .header div ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 0px;
 }
 
 a {
-    color: #ffffff;
+    color: #000000;
 }
 
-.wrapper, .headshot, .aboutme, .work, .contactme, .wrapper2 {
-    background-color: #2a607c ;
-    display:block;
-    color: black;
-    font-size: 18px;
+
+.container {
+    display:flex;
+    margin-left: 200px;
+    width:100%;
+    height:100%;
+    padding-top:15px;
+    padding-bottom: 50px;
 }
 
-.aboutme h2, .work h2, .contact-me h2 {
-    font-size: 48px;
+.aboutme h2, .mywork h2, .contactme h2 {
+    font-size: 36px;
+    float:left;
+    text-decoration: underline;
+    color: #2a607c;
 }
 
-.wrapper {
-    background-color:#778899;
+.aboutme h2 {
+    padding-top:75px;
+    padding-left: 25px;
+}
+
+.mywork h2 {
+    padding-top: 150px;
+    padding-left: 25px;
+}
+
+.aboutme p {
     display:flex;
     justify-content:center;
-    border: 5px solid black;
-    margin: 15px;
-    width:98%;
-    height:100%;
-    padding: 15px;
+    margin-left:200px;
+    padding-top: 25px;
+    border-left: 5px solid #000000;
+    padding-left: 25px;
+    padding-bottom:25px;
+    font-size:24px;
 }
 
 .headshot {
-    width: 600px;
-    height:300px;
+    width: 650px;
+    height:350px;
     border-radius: 5px;
-    border: 5px solid black;
+    border-left: 5px solid #000000;
+    padding-left:25px;
 }
 
-.aboutme {
-    border: 5px solid black;
-    background-color: #2a607c;
-    margin: 15px;
+@media screen and (max-width: 768px) {
+    .container {
+        margin-left:0px;
+    }
+    .headhsot {
+        padding-left: none;
+        border-left: none;
+        border-radius: none;
+    }
 }
 
-.work {
-    border: 5px solid black;
-    background-color: #778899;
-    margin: 15px;
-}
-
-.wrapper2 {
-    border: 5px solid black;
-    margin: 15px;
-    margin-left:400px;
-    margin-right:0px;
-    width:50%;
-    height:100%;
-    background-color: #778899;
+.container2 {
     display:flex;
-    flex-flow: row wrap;
-    transition: all 0.5s ease-in-out;
+    justify-content: space-evenly;
+    margin-left: 200px;
+    padding-left: 25px;
+    width:75%;
+    margin-top: 100px;
+    border-left: 5px solid #000000;
 }
+
+.container3 {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-left:200px;
+    width:75%;
+    border-left: 5px solid #000000;
+    padding-top: 20px;
+
+}
+
+.contactme h2 {
+    padding-top:140px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+.container4 {
+    width:75%;
+    height:125%;
+    margin-left:200px;
+    border-left: 5px solid #000000;
+    margin-top:100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.container4 ul {
+    display:flex;
+    align-items:stretch;
+    justify-content:space-between;
+    padding-left:25px;
+}
+
+.container4 ul li {
+    list-style-type:none;
+    display:block;
+    flex: 0 1 auto;
+    font-size: 24px;
+}
+
 
 .img {
     border-radius: 10px;
@@ -106,32 +161,15 @@ a {
 }
 
 .big {
-    width: 400px;
+    width:1200px;
     height:400px;
 }
 
 .small {
-    width:200px;
+    width:300px;
     height:200px;
 }
 
-.contactme {
-    border: 5px solid black;
-    background-color: #2a607c;
-    margin: 15px;
-}
-
-.contactme ul {
-    display:flex;
-    list-style:none;
-    padding: 0px;
-    justify-content: space-between;
-}
-.contactme ul li {
-    border: 4px solid black;
-    padding: 5px;
-}
-
 .img:hover {
-  box-shadow: inset 5px 5px 25px var(--glow), 0 0 25px var(--glow);
+  box-shadow: inset 25px 25px 25px var(--glow), 0 0 25px var(--glow);
 }
