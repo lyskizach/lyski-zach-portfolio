@@ -173,7 +173,6 @@ a {
     margin: 25px 0;
     padding: 10px 0;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
@@ -201,7 +200,7 @@ a {
     list-style:none;
 }
 .contactme div ul li {
-    display:inline-block;
+    display:inline;
 }
 
 .big {
